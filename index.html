@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rifa</title>
+
+
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery.timer.js"></script>
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
+
+    <script src="js/app.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+</head>
+<body>
+
+<div class="container">
+    <div class="bases" id="winrifa">
+        00000
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="pull-right h4">
+                <span class="glyphicon glyphicon-cog" onclick="showSetup(); return false;"
+                      style="cursor: pointer;"></span>
+            </div>
+        </div>
+    </div>
+    <h1 class="text-center text-info tiulorifa" id="vtitle"></h1>
+
+    <div class="panel panel-default" id="formsetup">
+        <div class="panel-heading">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="pull-right">
+                        <span class="glyphicon glyphicon-remove"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel-body">
+            <div class="form-horizontal">
+                <div class="form-group">
+                    <label for="n1" class="control-label col-lg-3">Título</label>
+                    <div class="col-lg-6">
+                        <input type="text" name="title" id="title" class="form-control">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="n1" class="control-label col-lg-3">Número a Jugar</label>
+                    <div class="col-lg-6">
+                        <input type="number" name="n1" id="n1" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="n2" class="control-label col-lg-3">Número de sorteos</label>
+                    <div class="col-lg-6">
+                        <input type="number" name="n2" id="n2" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-lg-12">
+                        <div class="pull-right">
+                            <button type="button" onclick="aceptarSetup(); return false;" class="btn btn-default">
+                                Aceptar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row" id="rifa">
+        <div class="text-center">
+            <div class="rifa" id="num"></div>
+            <div class="rifa" id="div-id"></div>
+            <div class="btn-group btn-group-lg" role="group" id="botones">
+                <button type="button" class="btn btn-success btn-lg" onclick="iniciarRifa(); return false;">Inicio
+                </button>
+                <button type="button" class="btn btn-danger btn-lg" onclick="detenerRifa(); return false;">Detener
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="row" id="renglons">
+        <div class="text-center">
+            <div class="rifa text-center" id="numeros"></div>
+        </div>
+    </div>
+
+</div> <!--Cierre del container -->
+
+</body>
+</html>

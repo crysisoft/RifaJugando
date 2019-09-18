@@ -1,0 +1,84 @@
+.rifa {
+    font-size: 300px;
+    line-height: 250px;
+}
+
+.tiulorifa {
+    font-size: 80px;
+}
+
+.bases{
+    margin-top: 500px;
+    margin-left: 750px; /*abajo*/
+    font-size: 100px;
+    float: left;
+    z-index: 50000;
+    position: absolute;
+}
+
+.aniRifaBase {
+    margin-top: 400px;
+    margin-left: 750px; /*abajo*/
+    font-size: 100px;
+    float: left;
+    z-index: 50000;
+    position: absolute;
+
+    animation: aniRifa 3s 1 ease-in-out;
+    -webkit-animation: aniRifa 3s 1 ease-in-out;
+    -moz-animation: aniRifa 3s 1 ease-in-out;
+    -o-animation: aniRifa 3s 1 ease-in-out;
+
+}
+
+@-webkit-keyframes aniRifa {
+    0% {
+        margin-top: 0px;
+        margin-lef: 0px; /*arriba*/
+        color: red;
+        opacity: 0;
+    }
+    15% {
+        opacity: 100;
+        margin-top: 500px;
+        margin-left: 150px; /*abajo*/
+        color: blue;
+    }
+    30% {
+        margin-top: 150px;
+        margin-left: 300px; /*arriba*/
+        color: orange;
+    }
+    45% {
+        margin-top: 500px;
+        margin-left: 400px; /*abajo*/
+        color: green;
+    }
+    60% {
+        margin-top: 200px;
+        margin-left: 500px; /*arriba*/
+        color: yellow;
+    }
+    75% {
+        margin-top: 500px;
+        margin-left: 600px; /*abajo*/
+        color: fuchsia;
+    }
+    90% {
+        margin-top: 280px;
+        margin-left: 700px; /*arriba*/
+        color: grey;
+    }
+    100% {
+        margin-top: 500px;
+        margin-left: 750px; /*abajo*/
+    }
+}
+
+/*
+@-moz-keyframes aniRifa {
+
+}
+@-o-keyframes aniRifa {
+
+}*/
